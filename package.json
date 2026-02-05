@@ -1,0 +1,12 @@
+{
+  "name": "desafio-tecnico-ellos",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "sass:build": "sass css/style.scss css/style.css",
+    "sass:watch": "sass css/style.scss css/style.css --watch"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0"
+  }
+}
