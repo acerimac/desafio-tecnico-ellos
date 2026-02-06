@@ -25,6 +25,23 @@ p {
   min-height: 100vh;
 }
 
+.golden-badge {
+  color: #E2B961;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #E2B961;
+  border-radius: 12px;
+  width: fit-content;
+  padding: 6px 16px;
+  gap: 8px;
+}
+
+.golden-badge img {
+  width: 20px;
+  height: 20px;
+}
+
 header {
   flex-shrink: 0;
   width: 100%;
@@ -42,21 +59,25 @@ header {
   color: #fff;
   width: 100%;
 }
+
 .header-container nav {
   font-family: "Cinzel Decorative", serif;
   background-color: rgba(255, 255, 255, 0.168627451);
   padding: 12px 24px;
   border-radius: 40px;
 }
+
 .header-container nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
 }
+
 .header-container nav li a {
   color: #fff;
   text-decoration: none;
 }
+
 .header-container .header-container-phone {
   background-color: rgba(255, 255, 255, 0.168627451);
   padding: 8px 24px;
@@ -82,6 +103,7 @@ header {
   padding: 6px 16px;
   gap: 8px;
 }
+
 .purple-badge img {
   width: 20px;
   height: 20px;
@@ -93,18 +115,21 @@ header {
   width: 100%;
   max-width: 1440px;
 }
+
 .home-container .call-to-action-text {
   display: flex;
   flex-direction: column;
   gap: 20px;
   flex: 1;
 }
+
 .home-container .call-to-action-text .call-to-action-text-content {
   display: flex;
   flex-direction: column;
   gap: 18px;
   max-width: 700px;
 }
+
 .home-container .call-to-action-text .call-to-action-text-content h1 {
   font-family: "Cinzel Decorative", serif;
   font-size: 4.5rem;
@@ -112,17 +137,23 @@ header {
   font-weight: 400;
   line-height: 100%;
 }
+
 .home-container .call-to-action-text .call-to-action-text-content p {
   line-height: 175%;
 }
+
 .home-container .call-to-action-form {
+  flex: 1;
+}
+
+.call-to-action-form {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  flex: 1;
 }
-.home-container .call-to-action-form .call-to-action-form-container {
+
+.call-to-action-form .call-to-action-form-container {
   background-color: rgba(135, 34, 194, 0.462745098);
   border-radius: 50px;
   max-width: 480px;
@@ -131,27 +162,31 @@ header {
   flex-direction: column;
   gap: 20px;
 }
-.home-container .call-to-action-form .call-to-action-form-header {
+
+.call-to-action-form .call-to-action-form-header {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 32px;
   margin-bottom: 16px;
 }
-.home-container .call-to-action-form .call-to-action-form-header h3 {
+
+.call-to-action-form .call-to-action-form-header h3 {
   font-size: 32px;
   color: #B775CB;
   font-family: "Cinzel Decorative", serif;
   text-align: center;
 }
-.home-container .call-to-action-form .call-to-action-form-content {
+
+.call-to-action-form .call-to-action-form-content {
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 12px;
   width: 100%;
 }
-.home-container .call-to-action-form .call-to-action-form-content input {
+
+.call-to-action-form .call-to-action-form-content input {
   width: 100%;
   height: 48px;
   padding: 0 16px;
@@ -162,10 +197,12 @@ header {
   box-sizing: border-box;
   font-size: 1rem;
 }
-.home-container .call-to-action-form .call-to-action-form-content input::placeholder {
+
+.call-to-action-form .call-to-action-form-content input::placeholder {
   color: #53637D;
 }
-.home-container .call-to-action-form .call-to-action-form-content textarea {
+
+.call-to-action-form .call-to-action-form-content textarea {
   width: 100%;
   min-height: 100px;
   padding: 16px;
@@ -177,10 +214,12 @@ header {
   resize: vertical;
   font-size: 1rem;
 }
-.home-container .call-to-action-form .call-to-action-form-content textarea::placeholder {
+
+.call-to-action-form .call-to-action-form-content textarea::placeholder {
   color: #53637D;
 }
-.home-container .call-to-action-form .call-to-action-form-content button {
+
+.call-to-action-form .call-to-action-form-content button {
   width: 100%;
   height: 48px;
   border-radius: 12px;
@@ -194,7 +233,8 @@ header {
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
-.home-container .call-to-action-form .call-to-action-form-content button:hover {
+
+.call-to-action-form .call-to-action-form-content button:hover {
   opacity: 0.9;
 }
 
@@ -214,12 +254,15 @@ header {
   margin: 64px 0;
   gap: 32px;
 }
+
 .sobre-nos-container .sobre-nos-image img {
   width: 460px;
 }
+
 .sobre-nos-container .sobre-nos-text {
   max-width: 660px;
 }
+
 .sobre-nos-container .sobre-nos-text h2 {
   font-size: 56px;
   color: #B775CB;
@@ -228,6 +271,7 @@ header {
   line-height: 100%;
   margin: 32px 0 16px 0;
 }
+
 .sobre-nos-container .sobre-nos-text p {
   line-height: 175%;
 }
@@ -244,7 +288,10 @@ header {
   display: flex;
   flex-direction: column;
   margin-top: 64px;
+  width: 100%;
+  max-width: 1440px;
 }
+
 .servicos-container .servicos-text {
   display: flex;
   flex-direction: column;
@@ -254,34 +301,27 @@ header {
   font-family: "Cinzel Decorative", serif;
   margin-bottom: 32px;
 }
+
 .servicos-container .servicos-text h2 {
   font-size: 42px;
   color: #E2B961;
   font-weight: 400;
 }
-.servicos-container .servicos-text .golden-badge {
-  color: #E2B961;
-  display: flex;
-  align-items: center;
-  font-family: "Poppins", serif;
-  border: 1px solid #E2B961;
-  border-radius: 12px;
-  width: fit-content;
-  padding: 4px 16px;
-  gap: 8px;
-}
+
 .servicos-container .cards-container {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 }
+
 .servicos-container .cards-container .cards-wrapper {
   display: flex;
   flex-direction: column;
   flex: 1;
   gap: 1rem;
 }
+
 .servicos-container .cards-container .cards-wrapper .cards {
   display: flex;
   background-color: rgba(11, 12, 21, 0.4941176471);
@@ -292,23 +332,28 @@ header {
   border: 1px solid #282828;
   gap: 20px;
 }
+
 .servicos-container .cards-container .cards-wrapper .cards .cards-icon img {
   width: 40px;
   height: 40px;
 }
+
 .servicos-container .cards-container .cards-wrapper .cards .cards-text {
   display: flex;
   flex-direction: column;
   max-width: 712px;
 }
+
 .servicos-container .cards-container .cards-wrapper .cards .cards-text h3 {
   font-size: 24px;
   color: #fff;
   font-weight: 500;
 }
+
 .servicos-container .cards-container .cards-wrapper .cards .cards-text p {
   color: #A4A4A4;
 }
+
 .servicos-container .servicos-container-button {
   display: flex;
   justify-content: center;
@@ -316,6 +361,7 @@ header {
   margin-top: 32px;
   margin-bottom: 64px;
 }
+
 .servicos-container .servicos-container-button button {
   max-width: 416px;
   border: 1px solid #D48200;
@@ -329,6 +375,7 @@ header {
   cursor: pointer;
   font-weight: 700;
 }
+
 .servicos-container .servicos-container-button button:hover {
   background-color: #D48200;
   color: #fff;
@@ -336,4 +383,173 @@ header {
   transition: all 0.2s ease;
 }
 
-/*# sourceMappingURL=style.css.map */
+#duvidas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.duvidas-container {
+  margin: 64px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.duvidas-container .duvidas-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.duvidas-container .duvidas-content .duvidas-header h2 {
+  font-size: 42px;
+  color: #B775CB;
+  font-weight: 400;
+  font-family: "Cinzel Decorative", serif;
+}
+
+.duvidas-container .duvidas-content .duvidas-questions-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.duvidas-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.duvidas-question {
+  background-color: rgba(11, 12, 21, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.duvidas-question .duvidas-question-trigger {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px;
+  background: none;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1.125rem;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.duvidas-question .duvidas-question-trigger:hover {
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.duvidas-question .duvidas-question-title {
+  flex: 1;
+  font-weight: 600;
+  color: #B775CB;
+}
+
+.duvidas-question:nth-child(2n) .duvidas-question-title {
+  color: #D48200;
+}
+
+.duvidas-question .duvidas-question-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+.duvidas-question.is-open .duvidas-question-icon {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.duvidas-question .duvidas-question-trigger:hover .duvidas-question-icon {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.duvidas-question .duvidas-question-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease-out;
+}
+
+.duvidas-question.is-open .duvidas-question-answer {
+  max-height: 500px;
+}
+
+.duvidas-question .duvidas-question-answer>p {
+  margin: 0;
+  padding: 0 24px 20px 24px;
+  color: #A4A4A4;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+#sugestoes {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../assets/night-sky-background.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.sugestoes-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  width: 100%;
+  gap: 32px;
+  margin: 64px 0;
+}
+
+.sugestoes-container .call-to-action-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 540px;
+}
+
+.sugestoes-container .call-to-action-text h2 {
+  font-size: 42px;
+  color: #E2B961;
+  font-weight: 400;
+  font-family: "Cinzel Decorative", serif;
+  line-height: 100%;
+}
+
+.sugestoes-container .call-to-action-form {
+  flex: 1;
+}
+
+.sugestoes-container .call-to-action-form .call-to-action-form-container {
+  max-width: 640px;
+}
+
+.sugestoes-container .call-to-action-form .call-to-action-form-container .call-to-action-form-header h3 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 28px;
+}

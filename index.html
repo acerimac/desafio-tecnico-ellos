@@ -178,29 +178,61 @@
                     <img src="assets/magic hand.png" alt="Magic Hand">
                 </div>
                 <div class="duvidas-content">
+                    <div class="purple-badge">
+                        <img src="assets/purple-outline-star.svg" alt="Purple Star">
+                        <span>Dúvidas</span>
+                    </div>
                     <div class="duvidas-header">
-                        <div class="purple-badge">
-                            <img src="assets/purple-outline-star.svg" alt="Purple Star">
-                            <span>Dúvidas</span>
-                        </div>
                         <h2>Perguntas frequentes</h2>
                     </div>
-                    <div class="duvidas-questions">
-                        <div class="duvidas-question">
-                            <h3>Esses produtos são oficiais??</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                    <div class="duvidas-questions-container" role="list">
+                        <div class="duvidas-question is-open" role="listitem">
+                            <button class="duvidas-question-trigger" type="button" aria-expanded="true"
+                                aria-controls="duvidas-answer-1" id="duvidas-q1">
+                                <span class="duvidas-question-title">Esses produtos são oficiais?</span>
+                                <span class="duvidas-question-icon" aria-hidden="true">−</span>
+                            </button>
+                            <div class="duvidas-question-answer" id="duvidas-answer-1" role="region"
+                                aria-labelledby="duvidas-q1" aria-hidden="false">
+                                <p>Não. Este é um projeto criativo inspirado em universos mágicos, sem vínculo oficial
+                                    com marcas registradas.</p>
+                            </div>
                         </div>
-                        <div class="duvidas-question">
-                            <h3>Posso escolher produtos por casa?</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <div class="duvidas-question" role="listitem">
+                            <button class="duvidas-question-trigger" type="button" aria-expanded="false"
+                                aria-controls="duvidas-answer-2" id="duvidas-q2">
+                                <span class="duvidas-question-title">Posso escolher produtos por casa?</span>
+                                <span class="duvidas-question-icon" aria-hidden="true">+</span>
+                            </button>
+                            <div class="duvidas-question-answer" id="duvidas-answer-2" role="region"
+                                aria-labelledby="duvidas-q2" aria-hidden="true">
+                                <p>Sim. Temos coleções organizadas por casa, com cores, símbolos e estilos próprios para
+                                    você encontrar o que combina com você.</p>
+                            </div>
                         </div>
-                        <div class="duvidas-question">
-                            <h3>Este site é uma loja real?</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <div class="duvidas-question" role="listitem">
+                            <button class="duvidas-question-trigger" type="button" aria-expanded="false"
+                                aria-controls="duvidas-answer-3" id="duvidas-q3">
+                                <span class="duvidas-question-title">Este site é uma loja real?</span>
+                                <span class="duvidas-question-icon" aria-hidden="true">+</span>
+                            </button>
+                            <div class="duvidas-question-answer" id="duvidas-answer-3" role="region"
+                                aria-labelledby="duvidas-q3" aria-hidden="true">
+                                <p>Este é um projeto de portfólio e demonstração. Os produtos são conceituais; a
+                                    experiência de navegação e o design são reais.</p>
+                            </div>
                         </div>
-                        <div class="duvidas-question">
-                            <h3>Os produtos são personalizados?</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+                        <div class="duvidas-question" role="listitem">
+                            <button class="duvidas-question-trigger" type="button" aria-expanded="false"
+                                aria-controls="duvidas-answer-4" id="duvidas-q4">
+                                <span class="duvidas-question-title">Os produtos são personalizados?</span>
+                                <span class="duvidas-question-icon" aria-hidden="true">+</span>
+                            </button>
+                            <div class="duvidas-question-answer" id="duvidas-answer-4" role="region"
+                                aria-labelledby="duvidas-q4" aria-hidden="true">
+                                <p>Muitos itens permitem personalização. Na página de cada produto você encontra as
+                                    opções disponíveis.</p>
+                            </div>
                         </div>
                     </div>
 
@@ -210,11 +242,43 @@
             </div>
         </section>
 
+        <section id="sugestoes">
+            <div class="sugestoes-container">
+                <div class="call-to-action-text">
+                    <div class="golden-badge">
+                        <img src="assets/golden-star.svg" alt="Golden Star">
+                        <span>Serviços</span>
+                    </div>
+                    <h2>Faça parte da criação da Arcana Store</h2>
+                </div>
+                <div class="call-to-action-form">
+                    <div class="call-to-action-form-container">
+
+                        <div class="call-to-action-form-header">
+                            <img src="assets/purple-fill-star.svg" alt="Purple Star">
+                            <h3>Quer sugerir produtos mágicos para nossa loja?</h3>
+                            <img src="assets/purple-fill-star.svg" alt="Purple Star">
+                        </div>
+
+                        <div class="call-to-action-form-content">
+                            <input type="email" placeholder="E-mail">
+                            <textarea placeholder="Sua sugestão"></textarea>
+                            <button type="submit">Enviar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
     </main>
 
-    <footer>
-        <p>&copy; 2025 Projeto Básico</p>
+    <footer class="footer">
+        <div class="footer-container">
+            <p>Arcana Store - Todos os direitos reservados - 2026</p>
+            <p>CNPJ 99.999.999/0001-99 · <a href="#">Termos de Uso</a></p>
+        </div>
     </footer>
 
     <script src="js/main.js"></script>
