@@ -42,25 +42,21 @@ header {
   color: #fff;
   width: 100%;
 }
-
 .header-container nav {
   font-family: "Cinzel Decorative", serif;
   background-color: rgba(255, 255, 255, 0.168627451);
   padding: 12px 24px;
   border-radius: 40px;
 }
-
 .header-container nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
 }
-
 .header-container nav li a {
   color: #fff;
   text-decoration: none;
 }
-
 .header-container .header-container-phone {
   background-color: rgba(255, 255, 255, 0.168627451);
   padding: 8px 24px;
@@ -86,7 +82,6 @@ header {
   padding: 6px 16px;
   gap: 8px;
 }
-
 .purple-badge img {
   width: 20px;
   height: 20px;
@@ -98,21 +93,18 @@ header {
   width: 100%;
   max-width: 1440px;
 }
-
 .home-container .call-to-action-text {
   display: flex;
   flex-direction: column;
   gap: 20px;
   flex: 1;
 }
-
 .home-container .call-to-action-text .call-to-action-text-content {
   display: flex;
   flex-direction: column;
   gap: 18px;
   max-width: 700px;
 }
-
 .home-container .call-to-action-text .call-to-action-text-content h1 {
   font-family: "Cinzel Decorative", serif;
   font-size: 4.5rem;
@@ -120,11 +112,9 @@ header {
   font-weight: 400;
   line-height: 100%;
 }
-
 .home-container .call-to-action-text .call-to-action-text-content p {
   line-height: 175%;
 }
-
 .home-container .call-to-action-form {
   display: flex;
   align-items: center;
@@ -132,7 +122,6 @@ header {
   flex-direction: column;
   flex: 1;
 }
-
 .home-container .call-to-action-form .call-to-action-form-container {
   background-color: rgba(135, 34, 194, 0.462745098);
   border-radius: 50px;
@@ -142,7 +131,6 @@ header {
   flex-direction: column;
   gap: 20px;
 }
-
 .home-container .call-to-action-form .call-to-action-form-header {
   display: flex;
   align-items: center;
@@ -150,14 +138,12 @@ header {
   gap: 32px;
   margin-bottom: 16px;
 }
-
 .home-container .call-to-action-form .call-to-action-form-header h3 {
   font-size: 32px;
   color: #B775CB;
   font-family: "Cinzel Decorative", serif;
   text-align: center;
 }
-
 .home-container .call-to-action-form .call-to-action-form-content {
   display: flex;
   align-items: center;
@@ -165,7 +151,6 @@ header {
   gap: 12px;
   width: 100%;
 }
-
 .home-container .call-to-action-form .call-to-action-form-content input {
   width: 100%;
   height: 48px;
@@ -177,11 +162,9 @@ header {
   box-sizing: border-box;
   font-size: 1rem;
 }
-
 .home-container .call-to-action-form .call-to-action-form-content input::placeholder {
   color: #53637D;
 }
-
 .home-container .call-to-action-form .call-to-action-form-content textarea {
   width: 100%;
   min-height: 100px;
@@ -194,11 +177,9 @@ header {
   resize: vertical;
   font-size: 1rem;
 }
-
 .home-container .call-to-action-form .call-to-action-form-content textarea::placeholder {
   color: #53637D;
 }
-
 .home-container .call-to-action-form .call-to-action-form-content button {
   width: 100%;
   height: 48px;
@@ -213,7 +194,6 @@ header {
   cursor: pointer;
   transition: opacity 0.2s ease;
 }
-
 .home-container .call-to-action-form .call-to-action-form-content button:hover {
   opacity: 0.9;
 }
@@ -231,18 +211,15 @@ header {
   max-width: 1440px;
   width: 100%;
   grid-template-columns: 1fr 1fr;
-  margin-top: 64px;
+  margin: 64px 0;
   gap: 32px;
 }
-
 .sobre-nos-container .sobre-nos-image img {
   width: 460px;
 }
-
 .sobre-nos-container .sobre-nos-text {
   max-width: 660px;
 }
-
 .sobre-nos-container .sobre-nos-text h2 {
   font-size: 56px;
   color: #B775CB;
@@ -251,7 +228,112 @@ header {
   line-height: 100%;
   margin: 32px 0 16px 0;
 }
-
 .sobre-nos-container .sobre-nos-text p {
   line-height: 175%;
 }
+
+#servicos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #141625;
+}
+
+.servicos-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 64px;
+}
+.servicos-container .servicos-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-family: "Cinzel Decorative", serif;
+  margin-bottom: 32px;
+}
+.servicos-container .servicos-text h2 {
+  font-size: 42px;
+  color: #E2B961;
+  font-weight: 400;
+}
+.servicos-container .servicos-text .golden-badge {
+  color: #E2B961;
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", serif;
+  border: 1px solid #E2B961;
+  border-radius: 12px;
+  width: fit-content;
+  padding: 4px 16px;
+  gap: 8px;
+}
+.servicos-container .cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.servicos-container .cards-container .cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 1rem;
+}
+.servicos-container .cards-container .cards-wrapper .cards {
+  display: flex;
+  background-color: rgba(11, 12, 21, 0.4941176471);
+  width: 100%;
+  min-height: 180px;
+  padding: 42px 32px;
+  border-radius: 20px;
+  border: 1px solid #282828;
+  gap: 20px;
+}
+.servicos-container .cards-container .cards-wrapper .cards .cards-icon img {
+  width: 40px;
+  height: 40px;
+}
+.servicos-container .cards-container .cards-wrapper .cards .cards-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 712px;
+}
+.servicos-container .cards-container .cards-wrapper .cards .cards-text h3 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: 500;
+}
+.servicos-container .cards-container .cards-wrapper .cards .cards-text p {
+  color: #A4A4A4;
+}
+.servicos-container .servicos-container-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+.servicos-container .servicos-container-button button {
+  max-width: 416px;
+  border: 1px solid #D48200;
+  color: #D48200;
+  width: 100%;
+  height: 48px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-family: "Cinzel Decorative", serif;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 700;
+}
+.servicos-container .servicos-container-button button:hover {
+  background-color: #D48200;
+  color: #fff;
+  opacity: 0.9;
+  transition: all 0.2s ease;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -236,7 +236,7 @@ header {
     max-width: 1440px;
     width: 100%;
     grid-template-columns: 1fr 1fr;
-    margin-top: 64px;
+    margin: 64px 0;
     gap: 32px;
 
     .sobre-nos-image {
@@ -259,6 +259,126 @@ header {
 
         p {
             line-height: 175%;
+        }
+    }
+}
+
+#servicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #141625;
+}
+
+
+.servicos-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 64px;
+
+    .servicos-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        font-family: 'Cinzel Decorative', serif;
+        margin-bottom: 32px;
+
+        h2 {
+            font-size: 42px;
+            color: #E2B961;
+            font-weight: 400;
+        }
+
+        .golden-badge {
+            color: #E2B961;
+            display: flex;
+            align-items: center;
+            font-family: 'Poppins', serif;
+            border: 1px solid #E2B961;
+            border-radius: 12px;
+            width: fit-content;
+            padding: 4px 16px;
+            gap: 8px;
+        }
+    }
+
+    .cards-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        .cards-wrapper {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            gap: 1rem;
+
+            .cards {
+                display: flex;
+                background-color: #0b0c157e;
+                width: 100%;
+                min-height: 180px;
+                padding: 42px 32px;
+                border-radius: 20px;
+                border: 1px solid #282828;
+                gap: 20px;
+
+                .cards-icon {
+                    img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+
+                .cards-text {
+                    display: flex;
+                    flex-direction: column;
+                    max-width: 712px;
+
+                    h3 {
+                        font-size: 24px;
+                        color: #fff;
+                        font-weight: 500;
+                    }
+
+                    p {
+                        color: #A4A4A4;
+                    }
+                }
+            }
+        }
+    }
+
+    .servicos-container-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 32px;
+        margin-bottom: 64px;
+
+        button {
+            max-width: 416px;
+            border: 1px solid #D48200;
+            color: #D48200;
+            width: 100%;
+            height: 48px;
+            border-radius: 12px;
+            font-size: 20px;
+            font-family: 'Cinzel Decorative', serif;
+            background-color: transparent;
+            cursor: pointer;
+            font-weight: 700;
+
+            &:hover {
+                background-color: #D48200;
+                color: #fff;
+                opacity: 0.9;
+                transition: all 0.2s ease;
+            }
         }
     }
 }
