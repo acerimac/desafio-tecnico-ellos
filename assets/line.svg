@@ -1,0 +1,17 @@
+<svg width="114" height="430" viewBox="0 0 114 430" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_57_142)">
+<line x1="56.7" y1="390.2" x2="56.7" y2="39.2" stroke="#A53EDA" stroke-width="3"/>
+<rect x="56.7" y="232.2" width="24.7487" height="24.7487" transform="rotate(-135 56.7 232.2)" fill="#A53EDA"/>
+<rect x="56.7339" y="230.721" width="22.7052" height="22.6093" transform="rotate(-135 56.7339 230.721)" fill="#0B0C15"/>
+</g>
+<line x1="58.7" y1="390.2" x2="58.7" y2="39.2" stroke="#A53EDA" stroke-width="3"/>
+<rect x="58.7" y="232.2" width="24.7487" height="24.7487" transform="rotate(-135 58.7 232.2)" fill="#A53EDA"/>
+<rect x="58.7339" y="230.721" width="22.7052" height="22.6093" transform="rotate(-135 58.7339 230.721)" fill="#0B0C15"/>
+<defs>
+<filter id="filter0_f_57_142" x="-4.95911e-05" y="1.14441e-05" width="113.4" height="429.4" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="19.6" result="effect1_foregroundBlur_57_142"/>
+</filter>
+</defs>
+</svg>

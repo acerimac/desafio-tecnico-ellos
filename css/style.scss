@@ -222,3 +222,43 @@ header {
         }
     }
 }
+
+#sobre-nos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.sobre-nos-container {
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 64px;
+    gap: 32px;
+
+    .sobre-nos-image {
+        img {
+            width: 460px;
+        }
+    }
+
+    .sobre-nos-text {
+        max-width: 660px;
+
+        h2 {
+            font-size: 56px;
+            color: #B775CB;
+            font-family: 'Cinzel Decorative', serif;
+            font-weight: 400;
+            line-height: 100%;
+            margin: 32px 0 16px 0;
+        }
+
+        p {
+            line-height: 175%;
+        }
+    }
+}

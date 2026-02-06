@@ -217,3 +217,41 @@ header {
 .home-container .call-to-action-form .call-to-action-form-content button:hover {
   opacity: 0.9;
 }
+
+#sobre-nos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.sobre-nos-container {
+  display: flex;
+  align-items: center;
+  max-width: 1440px;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 64px;
+  gap: 32px;
+}
+
+.sobre-nos-container .sobre-nos-image img {
+  width: 460px;
+}
+
+.sobre-nos-container .sobre-nos-text {
+  max-width: 660px;
+}
+
+.sobre-nos-container .sobre-nos-text h2 {
+  font-size: 56px;
+  color: #B775CB;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  line-height: 100%;
+  margin: 32px 0 16px 0;
+}
+
+.sobre-nos-container .sobre-nos-text p {
+  line-height: 175%;
+}
