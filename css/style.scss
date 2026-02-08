@@ -6,6 +6,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #0B0C15;
     font-family: 'Poppins', sans-serif;
@@ -76,14 +80,28 @@ header {
                 color: #fff;
                 text-decoration: none;
             }
+
+            &:hover {
+                a {
+                    color: #B775CB;
+                    transition: all 0.2s ease;
+                }
+            }
         }
     }
 
     .header-container-phone {
         background-color: #ffffff2b;
-        padding: 8px 24px;
+        padding: 12px 24px;
         border-radius: 40px;
         font-family: 'Cinzel Decorative', serif;
+
+        &:hover {
+            p {
+                color: #B775CB;
+                transition: all 0.2s ease;
+            }
+        }
     }
 }
 
@@ -102,7 +120,7 @@ header {
     border: 1px solid #B775CB;
     border-radius: 12px;
     width: fit-content;
-    padding: 6px 16px;
+    padding: 4px 16px;
     gap: 8px;
 
     img {
@@ -122,6 +140,7 @@ header {
         flex-direction: column;
         gap: 20px;
         flex: 1;
+        margin-bottom: 82px;
 
         .call-to-action-text-content {
             display: flex;
@@ -369,7 +388,7 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 32px;
+        margin-top: 64px;
 
         button {
             max-width: 416px;
@@ -414,13 +433,14 @@ header {
         flex-direction: column;
         gap: 32px;
 
-        .duvidas-header {
+        .duvidas-content-header {
 
             h2 {
                 font-size: 42px;
                 color: #B775CB;
                 font-weight: 400;
                 font-family: 'Cinzel Decorative', serif;
+                margin-top: 16px;
             }
         }
 
@@ -574,10 +594,20 @@ header {
 
 .produtos-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+    width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
 
     img {
-        width: 100%;
-        height: 100%;
+        flex: 1 1 140px;
+        min-width: 120px;
+        max-width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
     }
 }
 
@@ -588,13 +618,332 @@ header {
     justify-content: center;
     width: 100%;
     margin: 32px 0;
+    padding: 0 16px;
 
     p {
         font-size: 14px;
+        text-align: center;
     }
 
     a {
         color: #B775CB;
         text-decoration: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-container {
+        padding: 16px 20px;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
+
+        nav ul {
+            gap: 12px;
+        }
+
+        .header-container-phone {
+            padding: 6px 16px;
+            font-size: 0.875rem;
+        }
+    }
+
+    .home-container {
+        flex-direction: column;
+        gap: 32px;
+        padding: 0 24px;
+
+        .call-to-action-text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 32px;
+        }
+
+        .call-to-action-text .call-to-action-text-content h1 {
+            font-size: 3rem;
+        }
+    }
+
+    .call-to-action-form .call-to-action-form-container {
+        margin: 0 16px;
+        padding: 24px 20px;
+        border-radius: 32px;
+    }
+
+    .call-to-action-form-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .sobre-nos-container {
+        flex-direction: column;
+        margin: 64px 24px;
+        gap: 24px;
+
+
+        .sobre-nos-image img {
+            width: 100%;
+            max-width: 360px;
+        }
+
+        .sobre-nos-text h2 {
+            font-size: 2.25rem;
+        }
+    }
+
+    .servicos-container {
+        margin: 64px 24px;
+
+        .servicos-text h2 {
+            font-size: 2rem;
+        }
+
+        .cards-container {
+            flex-direction: column;
+        }
+
+        .cards-wrapper .cards {
+            padding: 24px 20px;
+            min-height: auto;
+
+            .cards-text h3 {
+                font-size: 1.125rem;
+            }
+        }
+    }
+
+    .duvidas-container {
+        flex-direction: column;
+        margin: 64px 24px;
+        gap: 24px;
+
+        .duvidas-image img {
+            max-width: 280px;
+            width: 100%;
+        }
+
+        .duvidas-content .duvidas-content-header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .duvidas-content .duvidas-content-header h2 {
+            font-size: 2rem;
+        }
+
+    }
+
+    .sugestoes-container {
+        flex-direction: column;
+        margin: 64px 24px;
+        padding: 0 24px;
+        gap: 24px;
+
+        .call-to-action-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .call-to-action-text h2 {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+
+
+        .call-to-action-form .call-to-action-form-container {
+            max-width: 100%;
+        }
+    }
+
+    .produtos-container img {
+        flex: 1 1 50%;
+        min-width: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+
+        nav {
+            padding: 10px 16px;
+
+            ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 8px;
+            }
+        }
+    }
+
+    .home-container .call-to-action-text .call-to-action-text-content h1 {
+        font-size: 3rem;
+        text-align: center;
+        line-height: 100%;
+    }
+
+    .home-container .call-to-action-text .call-to-action-text-content p {
+        font-size: 0.9375rem;
+        text-align: center;
+    }
+
+    .call-to-action-form-header {
+        gap: 16px;
+        flex-wrap: wrap;
+
+        img {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .sobre-nos-container {
+        margin: 48px 16px;
+
+
+        .sobre-nos-divider {
+            display: none;
+        }
+
+        .sobre-nos-text h2 {
+            font-size: 1.75rem;
+            margin: 20px 0 12px 0;
+        }
+    }
+
+    .servicos-container {
+        margin: 48px 16px;
+
+        .servicos-text h2 {
+            font-size: 1.5rem;
+        }
+
+        .servicos-container-button button {
+            margin: 0 16px;
+        }
+    }
+
+    .duvidas-container .duvidas-content .duvidas-content-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+    }
+
+    .duvidas-question-trigger {
+        padding: 16px 20px;
+        font-size: 1rem;
+    }
+
+    .duvidas-question-answer>p {
+        padding: 0 20px 16px 20px;
+        font-size: 0.875rem;
+    }
+
+    .sugestoes-container .call-to-action-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .produtos-container img {
+        flex: 1 1 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        padding: 12px 16px;
+
+        >div:first-child img {
+            max-width: 120px;
+        }
+
+        .header-container-phone {
+            font-size: 0.75rem;
+            padding: 6px 12px;
+        }
+    }
+
+    .home-container {
+        padding: 0 16px;
+
+        .call-to-action-text .call-to-action-text-content h1 {
+            font-size: 3rem;
+            text-align: center;
+            line-height: 100%;
+        }
+
+        .call-to-action-text .call-to-action-text-content p {
+            font-size: 0.9375rem;
+        }
+    }
+
+    .call-to-action-form .call-to-action-form-container {
+        padding: 20px 16px;
+        border-radius: 24px;
+    }
+
+    .call-to-action-form-header h3 {
+        font-size: 1.25rem;
+    }
+
+    .call-to-action-form-content {
+
+        input,
+        textarea {
+            font-size: 0.9375rem;
+        }
+    }
+
+    .sobre-nos-container {
+        margin: 32px 12px;
+
+        .sobre-nos-text h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .servicos-container {
+        margin: 32px 12px;
+    }
+
+    .duvidas-container {
+        margin: 32px 16px;
+    }
+
+    .duvidas-container .duvidas-content .duvidas-content-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+        text-align: center;
+
+        h2 {
+            text-align: center;
+        }
+    }
+
+    .sugestoes-container {
+        margin: 32px 16px;
+    }
+
+    .footer-container {
+        margin: 24px 0;
+        padding: 0 12px;
+
+        p {
+            font-size: 12px;
+        }
     }
 }
