@@ -1,5 +1,8 @@
 # Arcana Store
 
+Link do projeto: 
+https://6988d46a18e06374f99bcf62--extraordinary-faloodeh-c82cd8.netlify.app/
+
 ## Visão Geral do Projeto - Arcana Store
 
 Este projeto consiste no desenvolvimento de uma landing page, voltada para fãs do universo de magia e fantasia, com forte inspiração em fanbases como Harry Potter, além de outros mundos mágicos e imaginários.
