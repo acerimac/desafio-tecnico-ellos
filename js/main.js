@@ -44,7 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
     triggers.forEach((trigger) => {
         trigger.addEventListener('click', () => {
             const question = trigger.closest('.duvidas-question');
-            const answer = question.querySelector('.duvidas-question-answer');
             const isOpen = question.classList.contains('is-open');
 
             if (isOpen) {

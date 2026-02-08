@@ -706,7 +706,6 @@ header {
     }
 
     .call-to-action-form .call-to-action-form-container {
-        margin: 0 16px;
         padding: 24px 20px;
         border-radius: 32px;
     }
@@ -720,10 +719,30 @@ header {
         margin: 64px 24px;
         gap: 24px;
 
+        .sobre-nos-divider {
+            display: none;
+        }
 
         .sobre-nos-image img {
             width: 100%;
-            max-width: 360px;
+            max-width: 240px;
+        }
+
+        .sobre-nos-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+
+            h2 {
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
         }
 
         .sobre-nos-text h2 {
@@ -878,13 +897,12 @@ header {
     .sobre-nos-container {
         margin: 48px 16px;
 
-
         .sobre-nos-divider {
             display: none;
         }
 
         .sobre-nos-text h2 {
-            font-size: 1.75rem;
+            font-size: 2rem;
             margin: 20px 0 12px 0;
         }
     }
@@ -980,7 +998,7 @@ header {
         margin: 32px 12px;
 
         .sobre-nos-text h2 {
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
     }
 
