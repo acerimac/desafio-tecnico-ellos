@@ -1,5 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
     const header_container = document.querySelector('.header-container');
+
+    function toggle_header_scrolled() {
+        if (!header_container) return;
+        if (window.scrollY > 50) {
+            header_container.classList.add('header-scrolled');
+        } else {
+            header_container.classList.remove('header-scrolled');
+        }
+    }
+
+    window.addEventListener('scroll', toggle_header_scrolled);
+    toggle_header_scrolled();
+
     const menu_toggle = document.querySelector('.header-menu-toggle');
     const header_nav = document.getElementById('header-nav');
 
