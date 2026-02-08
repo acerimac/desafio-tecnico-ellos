@@ -15,6 +15,34 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main>section {
+    animation: appear linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.sobre-nos-container,
+.servicos-container,
+.duvidas-container,
+.sugestoes-container,
+.produtos-container {
+    animation: appear linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 50%;
+}
+
 p {
     color: #fff;
 }
