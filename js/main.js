@@ -1,4 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const header_container = document.querySelector('.header-container');
+    const menu_toggle = document.querySelector('.header-menu-toggle');
+    const header_nav = document.getElementById('header-nav');
+
+    if (menu_toggle && header_container && header_nav) {
+        menu_toggle.addEventListener('click', () => {
+            const is_open = header_container.classList.toggle('menu-open');
+            menu_toggle.setAttribute('aria-expanded', is_open);
+            menu_toggle.setAttribute('aria-label', is_open ? 'Fechar menu' : 'Abrir menu');
+        });
+
+        header_nav.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                header_container.classList.remove('menu-open');
+                menu_toggle.setAttribute('aria-expanded', 'false');
+                menu_toggle.setAttribute('aria-label', 'Abrir menu');
+            });
+        });
+    }
+
     const triggers = document.querySelectorAll('.duvidas-question-trigger');
 
     function closeQuestion(question) {
